@@ -1,7 +1,7 @@
-/* body{
+body{
     margin: 0;
     padding: 0;
-} */
+}
 .features{
     position: relative;
     width: 100%;
@@ -109,7 +109,19 @@
         height: auto;
         font-size: 20px;
     }
-    /* .footer_media img{
+
+    .footer{
+        width: 100%;
+        margin-top: 40px;
+        height: 300px;
+        border: 1px solid;
+    }
+    .footer_media img{
         width: 20px;
-    } */
+    }
+    .footer_premier{
+        width: 200px;
+        border: 2px solid;
+        text-align: center;
+    }
 }
