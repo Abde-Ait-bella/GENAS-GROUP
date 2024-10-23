@@ -119,8 +119,8 @@
     padding: 0.5rem;
     height: 100vh;
     opacity: 0.5;
-}
-@media only screen and (min-width: 440px){ */
+}*/
+@media only screen and (min-width: 440px){ 
 
     .about-us .about-image-border .back-white{
         position: absolute;
