@@ -102,20 +102,31 @@ body {
 }
 /* ------Genas----------- */
 
-/* .Genas-text-globale{
+.Genas-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: -183px;
+    gap: 42px;
+    margin-bottom: 39px;
+}
+
+.Genas-text-globale{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 300px;
+    font-size: 24px;
 }
 .Genas-text h1{
     display: flex;
     flex-direction: column;
     justify-items: center;
+    /*margin-left: 85px;*/
     text-align: center;
     width: 252px;
     font-family: initial;
     color: #18599C;
+    font-weight: 200;
 }
 .Genas-text p{
         font-family: "Roboto", sans-serif;
@@ -127,22 +138,115 @@ body {
     justify-content: space-around;
 }
 .Genas-imge img{
-    border-radius: 10px ;
-    border: 20px solid #9E9E9E;
-} */
+    border: 5px solid #e7e6e6;
+    border-radius: 75px;
+
+}
+.Genas-imge{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 34px 0px #00000061;
+    border-radius: 75px;
+}
+
+
+.border{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 85px;
+    display: flex;
+    align-items: center;
+    /* margin: auto 0; */
+    border: 11px solid #c0c0c06b;
+}
+
+.Genas-imge-touts{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 
 /* ------Responsive Design----------- */
-@media (min-width: 1025px) {    
+@media (min-width: 1025px) {   
+    
+    body{
+        margin-left: 19px
+    }
 
+    /* ----Services Section----- */
     .services-mis {
         flex-direction: row;
         width: 100%;
         height: 100%;
         gap: 9.5%;
     }
-
+    
     .statistics-section {
         flex-direction: row;
     }
+
+    /* ------Genas----------- */
+    
+    .Genas-section {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        gap: 80px;
+        margin-bottom: 50px;
+    }
+
+    .border {
+        border-radius: 154px;
+        border: 20px solid #c0c0c06b;
+    }
+    .Genas-imge-touts {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2px;
+    }
+
+    .Genas-imge img {
+        border: 9px solid #e7e6e6;
+        border-radius: 156px;
+        width: 19rem;
+    }
+    
+    .Genas-imge-globale {
+        display: flex;
+        justify-content: space-around;
+        /* gap: 288px; */
+        width: 50%;
+
+   }
+
+   .Genas-imge {
+    border-radius: 167px;
+   }
+
+    .Genas-trans1{
+        transform: translateY(42px);
+    }
+     
+    .Genas-trans2{
+        transform: translateY(-2.1rem);
+    }
+
+    .Genas-text-globale {
+        margin-top: 100px;
+        font-size: 28px; /* Augmenter légèrement la taille de la police */
+    }
+
+    .Genas-text h1 {
+        width: auto; /* Enlever la largeur fixe */
+        font-size: 36px; /* Augmenter la taille pour le bureau */
+    }
+
+  
+
 }
