@@ -1,4 +1,4 @@
-.hero-section{
+.hero-section {
     background-image: url("../images/hero-background.svg");
     width: 100%;
     background-repeat: no-repeat;
@@ -20,6 +20,7 @@
     position: fixed;
     top: 0;
     z-index: 99;
+    backdrop-filter: blur(14px);
 }
 
 .hero-section nav {
@@ -29,7 +30,7 @@
     justify-content: space-evenly;
 }
 
-.hero-section nav .menuresponsive{
+.hero-section nav .menuresponsive {
     background-image: url("../images/background-nav.svg");
     width: 100%;
     height: 100%;
@@ -47,13 +48,13 @@
     transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 
-.hero-section nav .menuresponsive.open{
-   top: 0;
-   opacity: 1;
-   transition: top 0.6s ease-in-out , opacity 0.6s ease-in-out;
+.hero-section nav .menuresponsive.open {
+    top: 0;
+    opacity: 1;
+    transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 
-.hero-section nav .menuresponsive ul{
+.hero-section nav .menuresponsive ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -63,7 +64,7 @@
 }
 
 
-.hero-section nav .menuresponsive ul li a{
+.hero-section nav .menuresponsive ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 900;
@@ -72,15 +73,15 @@
     font-size: 1.4rem;
 }
 
-.hero-section nav .berger{
+.hero-section nav .berger {
     width: 2.6rem;
     height: 0.4rem;
-    background-color:  #18599C;
+    background-color: #18599C;
     position: relative;
     transition: background-color 0.5s ease 0.5s;
 }
 
-.hero-section nav .berger::before{
+.hero-section nav .berger::before {
     width: 2.6rem;
     position: absolute;
     content: "";
@@ -91,58 +92,58 @@
     transition: bottom 0.5s ease 0.5s, transform 0.5s ease;
 }
 
-.hero-section nav .berger::after{
+.hero-section nav .berger::after {
     width: 2.6rem;
     position: absolute;
     content: "";
     top: 0.7rem;
     height: 0.4rem;
-    background-color:  #18599C;
+    background-color: #18599C;
     transform: rotate(0deg);
     transition: top 0.5s ease 0.5s, transform 0.5s ease;
 }
 
-.navbar .berger.open::after{
+.navbar .berger.open::after {
     top: 0;
     transform: rotate(45deg);
     transition: top 0.5s ease, transform 0.5s ease 0.5s;
 }
 
-.navbar .berger.open::before{
+.navbar .berger.open::before {
     bottom: 0;
     transform: rotate(-45deg);
     transition: bottom 0.5s ease, transform 0.5s ease 0.5s;
 }
 
-.hero-section nav .berger.open{
+.hero-section nav .berger.open {
     background: transparent;
     transition: background 0.5s ease;
 }
 
-.hero-section nav .berger.open::after{
+.hero-section nav .berger.open::after {
     top: 0;
     transform: rotate(45deg);
     transition: top 0.5s ease, transform 0.5s ease 0.5s;
 }
 
-.hero-section nav .berger.open::before{
+.hero-section nav .berger.open::before {
     bottom: 0;
     transform: rotate(-45deg);
     transition: bottom 0.5s ease, transform 0.5s ease 0.5s;
 }
 
-.hero-section .nav-center{
+.hero-section .nav-center {
     display: none;
 }
 
-.hero-section nav .nav-right{
+.hero-section nav .nav-right {
     display: grid;
     grid-template-columns: 67% 20%;
     align-items: center;
     gap: 13%;
 }
 
-.hero-section nav .nav-right ul{
+.hero-section nav .nav-right ul {
     display: flex;
     list-style-type: none;
     padding: 5px 10px;
@@ -152,27 +153,27 @@
 
 }
 
-.hero-section nav .nav-right ul li{
+.hero-section nav .nav-right ul li {
     padding: 2px 10px;
     border-radius: 17px;
     color: black;
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
-.hero-section nav .nav-right ul li:hover{
-    background-color: blue;   
-}
-
-.hero-section nav .nav-right ul li.active{
+.hero-section nav .nav-right ul li:hover {
     background-color: blue;
 }
 
-.hero-section nav .nav-right ul li.active a{
+.hero-section nav .nav-right ul li.active {
+    background-color: blue;
+}
+
+.hero-section nav .nav-right ul li.active a {
     color: white;
 }
 
-.hero-section nav ul a{
+.hero-section nav ul a {
     text-decoration: none;
     font-family: system-ui;
     font-weight: 900;
@@ -180,7 +181,7 @@
     color: black;
 }
 
-.hero-section .title{
+.hero-section .title {
     font-family: system-ui;
     font-weight: 900;
     font-size: 5vw;
@@ -191,13 +192,13 @@
     color: #18599C;
 }
 
-.hero-section .description{
+.hero-section .description {
     padding: 0px 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.hero-section .hero-features{
+.hero-section .hero-features {
     width: 80%;
     background-color: white;
     height: 16rem;
@@ -211,7 +212,7 @@
     box-shadow: 0 5px 5px rgb(125, 125, 125, 0.5);
 }
 
-.hero-section .hero-features div{
+.hero-section .hero-features div {
     height: 3rem;
     background-color: white;
     width: 85%;
@@ -223,22 +224,25 @@
     align-items: center;
 }
 
-.hero-section .hero-features .Energy:hover, .Nautic:hover, .Aviation:hover, .Security:hover{
+.hero-section .hero-features .Energy:hover,
+.Nautic:hover,
+.Aviation:hover,
+.Security:hover {
     box-shadow: 0 5px 10px rgba(25, 25, 25, 0.2);
     transition: 0.3s;
 }
 
 
-.hero-section .hero-features div img{
+.hero-section .hero-features div img {
     width: 27px;
 }
 
-.hero-section .hero-features .button{
+.hero-section .hero-features .button {
     grid-column: span 2;
     background-color: transparent;
 }
 
-.hero-section .hero-features .button button{
+.hero-section .hero-features .button button {
     width: 8.5rem;
     background-color: #D14A37;
     padding: 0.8rem 0.6rem;
@@ -247,68 +251,310 @@
     color: white;
 }
 
+
+
+.timeline {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: 100px 0;
+    gap: 7rem;
+}
+
+.timeline .images {
+    position: relative;
+}
+
+.timeline .images img {
+    width: 13.563rem;
+    position: relative;
+}
+
+
+.timeline .images .info-img {
+    position: absolute;
+    left: -96px;
+    bottom: -12px;
+} 
+
+.timeline .images::before {
+    position: absolute;
+    content: "";
+    background-image: url("../svg/timline-befor-img.svg"), url("../svg/timeline-info-img.svg");
+    top: -75px;
+    left: -73px;
+    width: 8.125rem;
+    height: 12.688rem;
+    z-index: 1;
+    border: 10px solid white;
+    border-radius: 209px;
+    background-size: cover;
+}
+
+.timeline .images::after {
+    position: absolute;
+    content: "";
+    background-image: url(../svg/timline-after-img.svg);
+    bottom: -71px;
+    right: -80px;
+    width: 8.12rem;
+    height: 12.688rem;
+    z-index: 1;
+    border: 10px solid white;
+    border-radius: 209px;
+    background-size: cover;
+    background-position: center;
+}
+
+.timeline .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.timeline .content .sub-title {
+    text-align: center;
+    font-weight: 900;
+    font-family: fantasy;
+    font-size: x-large;
+    color: #717171;
+    letter-spacing: .1rem;
+}
+
+.timeline .content .title {
+    text-align: center;
+    font-weight: 900;
+    font-family: system-ui;
+    font-size: xx-large;
+    letter-spacing: .1rem;
+    width: 86%;
+    color: #18599C;
+}
+
+.timeline .content ul {
+    padding: 0 1rem;
+    margin-left: 1rem;
+}
+
+.timeline .content ul li::marker {
+    font-size: 2em;
+    color: #949494;
+}
+
+.innovation-section{
+    display: none;
+}
+
+.subscrib-section{
+    background-image: url(../svg/subscrib-img.svg);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 26.875rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.subscrib-section h3{
+    margin: 2rem 0;
+    text-align: center;
+    width: 90%;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.subscrib-section .button-subscrib{
+    width: 90%;
+    position: relative;
+}
+
+.subscrib-section input{
+    height: 55px;
+    width: 100%;
+    border-radius: 35px;
+    border: none;
+    padding: 0 2rem;
+    outline: none;
+}
+
+.subscrib-section button{
+    position: absolute;
+    right: 11px;
+    top: 9px;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 20px;
+    background-color: #E24A35;
+    color: #ffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+
 @media only screen and (min-width : 1280px) {
- 
-    .hero-section nav .nav-right{
+
+    .hero-section nav .nav-right {
         grid-template-columns: auto;
     }
 
-    .hero-section nav{
+    .hero-section nav {
         grid-template-columns: auto 50% auto
     }
 
-    .hero-section .nav-center{
+    .hero-section .nav-center {
         display: block;
         margin: auto 0;
     }
 
-    .hero-section nav .nav-center ul{
+    .hero-section nav .nav-center ul {
         display: flex;
         justify-content: space-evenly;
         list-style-type: none;
     }
 
-    .hero-section nav .nav-center ul a{
+    .hero-section nav .nav-center ul a {
         font-size: large;
         font-weight: 400;
         cursor: pointer;
     }
 
-    .hero-section nav .berger{
+    .hero-section nav .berger {
         display: none;
     }
-    
-    .hero-section .back-hero{
+
+    .hero-section .back-hero {
         display: block;
         margin: 0;
     }
-    .hero-section .title{
+
+    .hero-section .title {
         padding: 0;
         margin: 1rem 0;
     }
-    .hero-section .title h1{
+
+    .hero-section .title h1 {
         padding: 0;
         margin: 0;
     }
+
     .hero-section .description {
         display: flex;
         justify-content: center;
         padding: 0;
-        width: 100% ;
+        width: 100%;
     }
 
-    .hero-section .description p{
+    .hero-section .description p {
         width: 60%;
         padding: 0;
     }
 
-    .hero-section .hero-features{
+    .hero-section .hero-features {
         grid-template-columns: auto auto auto auto;
         align-items: center;
         height: 11rem;
     }
 
-    .hero-section .hero-features .button{
+    .hero-section .hero-features .button {
         grid-column: span 4;
     }
+
+    .timeline {
+        grid-template-columns: 50% 50%;
+        gap: 0;
+        margin: 10rem 2rem;
+    }
+
+    .timeline .content {
+        align-items: start;
+    }
+
+    .timeline .content ul {
+        margin-left: 0;
+    }
+    
+    .timeline .content .title{
+        text-align: start;
+    }
+
+    .timeline .images {
+        position: relative;
+    }
+    
+    .timeline .images img {
+        width: 19.041rem;
+    }
+    
+    .timeline .images::before {
+        width: 11.37rem;
+        height: 15.948rem;
+    }
+    
+    .timeline .images::after {
+        width: 11.37rem;
+        height: 15.948rem;
+    }
+
+    .innovation-section{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 0 7rem;
+        align-items: center;
+        margin: 5rem 7rem;
+    }
+    
+    .innovation-section .innovation-content{
+        display: grid;
+        grid-template-columns: 7rem auto;
+        gap: 1rem;
+    }
+    
+    .innovation-section .innovation-content img{
+        height: 15.156rem;
+    }
+    
+    .innovation-section .innovation-content p{
+        font-size: 2.6rem;
+        font-family: fantasy;
+        color: #18599C;
+    }
+    
+    .innovation-section .innovation-content p:nth-of-type(2){
+        text-align: center;
+    }
+    .innovation-section .innovation-content p:nth-of-type(3){
+        text-align: center;
+    }
+    
+    .innovation-section .innovation-image{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .innovation-section .innovation-image img{
+        width: 17.839rem;
+    }
+
+    .subscrib-section .button-subscrib{
+        width: 37%;
+    }
+
+    .subscrib-section h3{
+        width: 38%;
+    }
+
+    .timeline .images .info-img {
+        position: absolute;
+        left: -126px;
+        bottom: -12px;
+        /* height: 2.5rem; */
+    } 
 }
