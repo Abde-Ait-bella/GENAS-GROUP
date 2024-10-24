@@ -110,16 +110,94 @@
     border-bottom: 2px solid #18599C;
     bottom: 0;
 }
-/* style de trasformation-platform */
-/* .transformation-platform-section{
+/* style de transformation-platform */
+.transformation-platform{
+    position: relative;
     width: 100%;
-    background-image: url("../svg/tayara-imane.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 0.5rem;
+}
+.transformation-platform-section1{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.transformation-platform-section1 .transformation-avion{
+    width: 100%;
+    height: 80vh;
     opacity: 0.5;
-}*/
+}
+.transformation-platform-section1 .premier-titre{
+    
+    position:absolute;
+    top: 30px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #18599C;
+}
+.transformation-platform-section1 h3{
+    font-family: "Murecho", sans-serif;
+    font-size: 1.7rem;
+    font-weight:600;
+    position: absolute;
+    top: 10rem;
+}
+.transformation-platform-section1 .deuxieme-titre{
+    font-family: "Murecho", sans-serif;
+    font-size: 2rem;
+    font-weight:600;
+    font-style: italic;
+    position: absolute;
+    top: 17rem;
+    left: 2rem;
+}
+.transformation-platform-section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+    position: absolute;
+    top: 19rem;
+    height: 50vh;
+}
+.transformation-platform-section2 p{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+.transformation-platform-section2 p::before{
+    content: "";
+    width:10px;
+    height:10px;
+    background-color: yellow;
+    border:1px solid;
+    position:absolute;
+    left:-15px;
+    bottom:5px;
+}
+.transformation-platform-section2 .cta{
+    border: none;
+    background-color: #D14A37;
+    color: white;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-box-decoration-break: none;
+}
+/* .cta:hover {
+cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+} */
+
 @media only screen and (min-width: 440px){ 
 
     .about-us .about-image-border .back-white{
