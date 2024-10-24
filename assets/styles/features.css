@@ -1,7 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-}
 .features{
     position: relative;
     width: 100%;
@@ -17,7 +13,6 @@ body{
 }
 
 .features_avontage{
-    /* position: absolute; */
     width: 100%;
     height: calc(1900px - 200px);
     background-color: #18599C;
