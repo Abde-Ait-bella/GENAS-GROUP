@@ -173,6 +173,7 @@
 
 .hero-section nav .nav-right ul li:hover {
     background-color: blue;
+    color: white;
 }
 
 .hero-section nav .nav-right ul li.active {
