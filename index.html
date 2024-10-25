@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/hero.css" />
     <link rel="stylesheet" href="./assets/styles/about-us.css" />
     <link rel="stylesheet" href="./assets/styles/services.css" />
@@ -34,10 +35,12 @@
             <nav>
                 <div class="menuresponsive">
                     <ul>
-                        <li class="active"><a href="#hero-section">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Timeline</a></li>
+                      <li class="active"><a href="#hero-section">Home</a></li>
+                      <li><a href="#about-us">About us</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#features">Features</a></li>
+                      <li><a href="#timeline">Timeline</a></li>
+                      <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-left">
@@ -45,10 +48,12 @@
                 </div>
                 <div class="nav-center">
                         <ul>
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">services</a></li>
+                            <li class="active"><a href="#hero-section">Home</a></li>
+                            <li><a href="#about-us">About us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                            <li><a href="#contact">Contact</a></li>
                           </ul>
                 </div>
                 <div class="nav-right">
@@ -96,7 +101,7 @@
     <!-------------------------------------------------------------->
 
     <!---------------------------- About-Us ---------------------------->
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="about-image-border">
         <img src="./assets/svg/backgound-bleu.png" alt="" class="back-bleu">
         <div class="back-white"></div>
@@ -120,7 +125,7 @@
     <!------------------------------------------------------------------>
 
     <!---------------------------- Services ---------------------------->
-    <section class="services-section">
+    <section class="services-section" id="services">
       
       <div class="services-mis">
         <div class="services-mission">
@@ -205,7 +210,7 @@
     </section>
 
     <!---------------------------- Features ---------------------------->
-    <section class="features">
+    <section class="features" id="features">
         <img class="features_Frame1" src="./assets/images/amid_Frameé&.png" alt="logo">
         <div class="features_avontage">
             <div class="features_card features_card_1">
@@ -279,57 +284,107 @@
             <h2 class="deuxieme-titre">Objectives</h2>
         </div>
     </section>
-    <!------------------------- footer ------------------------------>   
 
-    <section class="footer">
-        <div class="footer_parent">
-            <div class="footer_premier">
-                <img class="footer_logo" src="assets/images/amid_logo.png" alt="">
-                <p class="footer_premier_p">
-                    There are many variations of passages of Lorem Ipsum available, 
-                    but the majority have suffered alteration in some form
-                </p>
-                <div class="footer_media">
-                    <a href=""><img src="assets/images/facebook-app-symbol (3).png" alt="logo"></a>
-                    <a href=""><img src="assets/images/linkedin.png" alt=""></a>
-                    <a href=""><img src="assets/images/instagram.png" alt=""></a>
-                </div>
-            </div>
-            <div class="footer_deuxieme">
-                <div class="footer_div_ul">
-                    <ul>
-                        <h3>Services</h3>
-                        <li>Energy</li>
-                        <li>Nautic</li>
-                        <li>Aviation</li>
-                        <li>Security</li>
-                    </ul>
-                </div>
-                <div class="footer_div_ul">  
-                    <ul>
-                        <h3>About</h3>
-                        <li>Our Blog</li>
-                        <li>Customers</li>
-                        <li>Our Team</li>
-                        <li>Careers</li>
-                        <li>Integrations</li>
-                    </ul>
-                </div>
-                <div class="footer_div_ul">
-                    <ul>
-                        <h3>Support</h3>
-                        <li>Test Zoom</li>
-                        <li>Account</li>
-                        <li>Support Center</li>
-                        <li>Live Training</li>
-                        <li>Accessibility</li>
-                    </ul>
-                </div>
-            </div>
-          </div>
-          <div class="Copyright">Copyright c Youcode 2024 All right reserved</div>
+
+    <!------------------------------------------------------------------>   
+
+    <!---------------------------- Time line ---------------------------->
+    <section class="timeline" id="timeline">
+      <div class="images">
+        <img src="./assets/svg/timeline.svg" alt="">
+        <img class="info-img" src="./assets/svg/timeline-info-img.svg" alt="">
+      </div>
+      <div class="content">
+        <p class="sub-title">Let's take a look at</p>
+        <h4 class="title">The time line of the project Genas Aviation</h4>
+        <ul>
+          <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+          <li>If you are going to use a passage of Lorem Ipsum</li>
+          <li>Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</li>
+          <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+        </ul>
+      </div>
     </section>
+    <!------------------------------------------------------------------>  
+    
+    <!---------------------------- section-innovation ---------------------------->
+      <section class="innovation-section">
+        <div class="innovation-content">
+          <img src="./assets/svg/innovation-content-img.svg" alt="">
+          <div class="tiltles">
+            <p>Accelerating</p>
+            <p>Innovation</p>
+            <p>Industrial</p>
+            <p>Evolution</p>
+          </div>
+        </div>
+        <div class="innovation-image">
+          <img src="./assets/svg/innovation-image-img.svg" alt="">
+        </div>
+      </section>
+    <!------------------------------------------------------------------>  
+
+    <!---------------------------- section-subscrib ---------------------------->
+        <section class="subscrib-section">
+          <h3>Stay connected to receive all our news and updates</h3>
+          <div class="button-subscrib">
+            <input type="text" placeholder="Enter your email address">
+            <button>Subscribe</button>
+          </div>
+        </section>
     <!------------------------------------------------------------------>
+    
+        <!------------------------- footer ------------------------------>   
+
+        <section class="footer">
+          <div class="footer_parent">
+              <div class="footer_premier">
+                  <img class="footer_logo" src="assets/images/amid_logo.png" alt="">
+                  <p class="footer_premier_p">
+                      There are many variations of passages of Lorem Ipsum available, 
+                      but the majority have suffered alteration in some form
+                  </p>
+                  <div class="footer_media">
+                      <a href=""><img src="assets/images/facebook-app-symbol (3).png" alt="logo"></a>
+                      <a href=""><img src="assets/images/linkedin.png" alt=""></a>
+                      <a href=""><img src="assets/images/instagram.png" alt=""></a>
+                  </div>
+              </div>
+              <div class="footer_deuxieme">
+                  <div class="footer_div_ul">
+                      <ul>
+                          <h3>Services</h3>
+                          <li>Energy</li>
+                          <li>Nautic</li>
+                          <li>Aviation</li>
+                          <li>Security</li>
+                      </ul>
+                  </div>
+                  <div class="footer_div_ul">  
+                      <ul>
+                          <h3>About</h3>
+                          <li>Our Blog</li>
+                          <li>Customers</li>
+                          <li>Our Team</li>
+                          <li>Careers</li>
+                          <li>Integrations</li>
+                      </ul>
+                  </div>
+                  <div class="footer_div_ul">
+                      <ul>
+                          <h3>Support</h3>
+                          <li>Test Zoom</li>
+                          <li>Account</li>
+                          <li>Support Center</li>
+                          <li>Live Training</li>
+                          <li>Accessibility</li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="Copyright">Copyright c Youcode 2024 All right reserved</div>
+      </section>
+      <!------------------------------------------------------------------>
     <script src="./assets/main.js"></script>
 </body>
 </html>
