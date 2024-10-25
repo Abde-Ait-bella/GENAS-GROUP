@@ -102,20 +102,31 @@ body {
 }
 /* ------Genas----------- */
 
-/* .Genas-text-globale{
+.Genas-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: -183px;
+    gap: 42px;
+    margin-bottom: 39px;
+}
+
+.Genas-text-globale{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 300px;
+    font-size: 24px;
 }
 .Genas-text h1{
     display: flex;
     flex-direction: column;
     justify-items: center;
+    /*margin-left: 85px;*/
     text-align: center;
     width: 252px;
     font-family: initial;
     color: #18599C;
+    font-weight: 200;
 }
 .Genas-text p{
         font-family: "Roboto", sans-serif;
@@ -127,22 +138,258 @@ body {
     justify-content: space-around;
 }
 .Genas-imge img{
-    border-radius: 10px ;
-    border: 20px solid #9E9E9E;
+    border: 5px solid #e7e6e6;
+    border-radius: 75px;
+
+}
+.Genas-imge{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 34px 0px #00000061;
+    border-radius: 75px;
+}
+
+
+.border{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 85px;
+    display: flex;
+    align-items: center;
+    /* margin: auto 0; */
+    border: 11px solid #c0c0c06b;
+}
+
+.Genas-imge-touts{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ------contact----------- */
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+label{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.contact-globale{
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.contact-inp{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-left: 7px;
+}
+
+.contact-inp input{
+    height: 43px;
+    border-radius: 6px;
+    border: none;
+    font-size: 19px;
+    
+}
+
+.contact-dropus h1{
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    color: #18599C;
+}
+
+.contact-dropus p{
+    font-size: 22px;
+}
+
+.text-espace{
+    padding: 0px 21px;
+}
+
+.file-text{
+    width: 373px;
+}
+
+/* .file-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.file-input::placeholder{
+    text-align: center;
 } */
 
 
-/* ------Responsive Design----------- */
-@media (min-width: 1025px) {    
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 37%;
+    background: #D14A37;
+    border-radius: 48px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -3px;
+    margin-left: 122px;
+    font-weight: 900;
+}
 
+ [type="submit"]:hover { 
+    background:#ff923a; 
+}
+.input_container {
+  border: 1px solid #e5e5e5;
+}
+
+input[type=file]::file-selector-button {
+  background-color: #fff;
+  color: #000;
+  border: 0px;
+  border-right: 1px solid #e5e5e5;
+  padding: 10px 15px;
+  margin-right: 20px;
+  transition: .5s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #eee;
+  border: 0px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.input-1{
+    display: grid;
+    gap: 20px;
+}
+
+.input-2{
+    display: grid;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* ------Responsive Design----------- */
+@media (min-width: 1025px) {   
+    
+    body{
+        margin-left: 19px
+    }
+
+    /* ----Services Section----- */
     .services-mis {
         flex-direction: row;
         width: 100%;
         height: 100%;
         gap: 2.5%;
     }
-
+    
     .statistics-section {
         flex-direction: row;
     }
+
+    /* ------Genas----------- */
+    
+    .Genas-section {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        gap: 80px;
+        margin-bottom: 50px;
+    }
+
+    .border {
+        border-radius: 154px;
+        border: 20px solid #c0c0c06b;
+    }
+    .Genas-imge-touts {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2px;
+    }
+
+    .Genas-imge img {
+        border: 9px solid #e7e6e6;
+        border-radius: 156px;
+        width: 19rem;
+    }
+    
+    .Genas-imge-globale {
+        display: flex;
+        justify-content: space-around;
+        /* gap: 288px; */
+        width: 50%;
+
+   }
+
+   .Genas-imge {
+    border-radius: 167px;
+   }
+
+    .Genas-trans1{
+        transform: translateY(42px);
+    }
+     
+    .Genas-trans2{
+        transform: translateY(-2.1rem);
+    }
+
+    .Genas-text-globale {
+        margin-top: 100px;
+        font-size: 28px; 
+    }
+
+    .Genas-text h1 {
+        width: auto; 
+        font-size: 36px; 
+    }
+
+    /* ------conatct----------- */
+     
+    input[type=submit]{
+        margin-left: 735px;
+    }
+    
+    .contact-inp {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 22px;
+        margin-left: 7px;
+    }
+    .contact-section{
+        margin-top: 50px;
+    }
+        
+  
+
 }
