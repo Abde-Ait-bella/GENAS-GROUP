@@ -1,3 +1,13 @@
+@keyframes moveup {
+    from {transform: translateY(0px);}
+    to {transform: translateY(20px);}
+  }
+
+:root{
+    --color-principal: #18599C;
+    --font-principal:  system-ui;
+}
+
 .hero-section {
     background-image: url("../images/hero-background.svg");
     width: 100%;
@@ -42,7 +52,7 @@
     left: 0;
     top: -113vh;
     height: 85vh;
-    border-bottom: 5px solid #18599C;
+    border-bottom: 5px solid var(--color-principal);
     padding: 5rem 0 2rem 0;
     opacity: 0;
     transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out;
@@ -69,14 +79,14 @@
     text-decoration: none;
     font-weight: 900;
     font-family: sans-serif;
-    color: #18599C;
+    color: var(--color-principal);
     font-size: 1.4rem;
 }
 
 .hero-section nav .berger {
     width: 2.6rem;
     height: 0.4rem;
-    background-color: #18599C;
+    background-color: var(--color-principal);
     position: relative;
     transition: background-color 0.5s ease 0.5s;
 }
@@ -87,7 +97,7 @@
     content: "";
     bottom: 0.7rem;
     height: 0.4rem;
-    background-color: #18599C;
+    background-color: var(--color-principal);
     transform: rotate(0deg);
     transition: bottom 0.5s ease 0.5s, transform 0.5s ease;
 }
@@ -98,7 +108,7 @@
     content: "";
     top: 0.7rem;
     height: 0.4rem;
-    background-color: #18599C;
+    background-color: var(--color-principal);
     transform: rotate(0deg);
     transition: top 0.5s ease 0.5s, transform 0.5s ease;
 }
@@ -175,21 +185,21 @@
 
 .hero-section nav ul a {
     text-decoration: none;
-    font-family: system-ui;
+    font-family: var(--font-principal);
     font-weight: 900;
     font-size: medium;
     color: black;
 }
 
 .hero-section .title {
-    font-family: system-ui;
+    font-family: var(--font-principal);
     font-weight: 900;
     font-size: 5vw;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
     padding-top: 100px;
-    color: #18599C;
+    color: var(--color-principal);
 }
 
 .hero-section .description {
@@ -220,7 +230,7 @@
     display: flex;
     justify-content: space-evenly;
     font-weight: 500;
-    font-family: system-ui;
+    font-family: var(--font-principal);
     align-items: center;
 }
 
@@ -327,11 +337,11 @@
 .timeline .content .title {
     text-align: center;
     font-weight: 900;
-    font-family: system-ui;
+    font-family: var(--font-principal);
     font-size: xx-large;
     letter-spacing: .1rem;
     width: 86%;
-    color: #18599C;
+    color: var(--color-principal);
 }
 
 .timeline .content ul {
@@ -401,6 +411,10 @@
 
 @media only screen and (min-width : 1280px) {
 
+    .hero-section {
+        position: relative;
+    }
+
     .hero-section nav .nav-right {
         grid-template-columns: auto;
     }
@@ -432,8 +446,22 @@
 
     .hero-section .back-hero {
         display: block;
-        margin: 0;
+        margin: 0 auto;
+        animation: moveup 2s ease-in-out  infinite alternate-reverse;
     }
+
+    .hero-sub-background{
+        background-image: url("../svg/hero-sub-background.svg");
+        position: absolute;
+        width: 29.584rem;
+        height: 26.849rem;
+        background-position: center;
+        background-size: contain;
+        top: 12%;
+        left: 39%;
+        z-index: -1;
+    }
+    
 
     .hero-section .title {
         padding: 0;
@@ -524,7 +552,7 @@
     .innovation-section .innovation-content p{
         font-size: 2.6rem;
         font-family: fantasy;
-        color: #18599C;
+        color: var(--color-principal);
     }
     
     .innovation-section .innovation-content p:nth-of-type(2){
