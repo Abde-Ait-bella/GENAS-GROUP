@@ -452,15 +452,17 @@
     }
 
     .hero-sub-background{
-        background-image: url("../svg/hero-sub-background.svg");
+        background-image: url(../svg/hero-sub-background.svg);
         position: absolute;
-        width: 29.584rem;
-        height: 26.849rem;
-        background-position: center;
+        width: 100%;
+        height: 30.849rem;
         background-size: contain;
-        top: 12%;
-        left: 39%;
+        top: 7.6rem;
+        left: 0;
         z-index: -1;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
     }
     
 
