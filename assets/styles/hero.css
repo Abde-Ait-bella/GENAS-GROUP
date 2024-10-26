@@ -500,7 +500,7 @@
     .timeline {
         grid-template-columns: 50% 50%;
         gap: 0;
-        margin: 10rem 2rem;
+        margin: 14rem 2rem;
     }
 
     .timeline .content {
