@@ -182,7 +182,7 @@ text-align: center;
 .card{
     display: grid;
     gap: 3rem;
-    padding: 3rem;
+    padding: 13rem 3rem 3rem 3rem;
     align-items: center;
 }
 .groups{
