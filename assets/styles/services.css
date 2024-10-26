@@ -301,10 +301,6 @@ input[type=file]::file-selector-button:hover {
 
 /* ------Responsive Design----------- */
 @media (min-width: 1025px) {   
-    
-    body{
-        margin-left: 19px
-    }
 
     /* ----Services Section----- */
     .services-mis {
