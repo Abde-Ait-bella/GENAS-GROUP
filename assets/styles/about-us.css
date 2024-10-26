@@ -275,6 +275,7 @@ text-align: center;
         justify-content: space-between;
         align-items: center;
         width: 100vw;
+        margin-top: 5rem;
     }
     .transformation-platform-section1 .transformation-avion{
         width: 50vw;
