@@ -1,11 +1,16 @@
 @keyframes moveup {
-    from {transform: translateY(0px);}
-    to {transform: translateY(20px);}
-  }
+    from {
+        transform: translateY(0px);
+    }
 
-:root{
+    to {
+        transform: translateY(20px);
+    }
+}
+
+:root {
     --color-principal: #18599C;
-    --font-principal:  system-ui;
+    --font-principal: system-ui;
 }
 
 .hero-section {
@@ -51,17 +56,21 @@
     width: 100%;
     left: 0;
     top: -113vh;
-    height: 85vh;
+    border-bottom-left-radius: 16rem;
+    border-bottom-right-radius: 16rem;
+    height: 100vh;
     border-bottom: 5px solid var(--color-principal);
-    padding: 5rem 0 2rem 0;
-    opacity: 0;
-    transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    padding: 0;
+    opacity: 1;
+    transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out, border-bottom-left-radius 0.6s ease-in-out, border-bottom-right-radius 0.6s ease-in-out;
 }
 
 .hero-section nav .menuresponsive.open {
     top: 0;
     opacity: 1;
-    transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: top 0.6s ease-in-out, opacity 0.6s  ease-in-out, border-bottom-left-radius 0.6s 0.3s ease-in-out,  border-bottom-right-radius 0.6s 0.3s ease-in-out;
 }
 
 .hero-section nav .menuresponsive ul {
@@ -70,7 +79,9 @@
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    padding: 0;
+    padding: 5rem 0 2rem 0;
+    backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 
@@ -183,6 +194,11 @@
     color: white;
 }
 
+
+.hero-section nav .nav-right ul li:hover a {
+    color: white;
+}
+
 .hero-section nav ul a {
     text-decoration: none;
     font-family: var(--font-principal);
@@ -268,7 +284,7 @@
     grid-template-columns: auto;
     justify-content: space-evenly;
     justify-items: center;
-    margin: 100px 0;
+    margin: 17rem 0;
     gap: 7rem;
 }
 
@@ -286,7 +302,7 @@
     position: absolute;
     left: -96px;
     bottom: -12px;
-} 
+}
 
 .timeline .images::before {
     position: absolute;
@@ -354,11 +370,11 @@
     color: #949494;
 }
 
-.innovation-section{
+.innovation-section {
     display: none;
 }
 
-.subscrib-section{
+.subscrib-section {
     background-image: url(../svg/subscrib-img.svg);
     height: 100%;
     display: flex;
@@ -371,7 +387,7 @@
     justify-content: center;
 }
 
-.subscrib-section h3{
+.subscrib-section h3 {
     margin: 2rem 0;
     text-align: center;
     width: 90%;
@@ -379,12 +395,12 @@
     color: white;
 }
 
-.subscrib-section .button-subscrib{
+.subscrib-section .button-subscrib {
     width: 90%;
     position: relative;
 }
 
-.subscrib-section input{
+.subscrib-section input {
     height: 55px;
     width: 100%;
     border-radius: 35px;
@@ -393,7 +409,7 @@
     outline: none;
 }
 
-.subscrib-section button{
+.subscrib-section button {
     position: absolute;
     right: 11px;
     top: 9px;
@@ -447,21 +463,23 @@
     .hero-section .back-hero {
         display: block;
         margin: 0 auto;
-        animation: moveup 2s ease-in-out  infinite alternate-reverse;
+        animation: moveup 2s ease-in-out infinite alternate-reverse;
     }
 
-    .hero-sub-background{
-        background-image: url("../svg/hero-sub-background.svg");
+    .hero-sub-background {
+        background-image: url(../svg/hero-sub-background.svg);
         position: absolute;
-        width: 29.584rem;
-        height: 26.849rem;
-        background-position: center;
+        width: 100%;
+        height: 30.849rem;
         background-size: contain;
-        top: 12%;
-        left: 39%;
+        top: 8.6rem;
+        left: 0;
         z-index: -1;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
     }
-    
+
 
     .hero-section .title {
         padding: 0;
@@ -498,7 +516,7 @@
     .timeline {
         grid-template-columns: 50% 50%;
         gap: 0;
-        margin: 10rem 2rem;
+        margin: 14rem 2rem;
     }
 
     .timeline .content {
@@ -508,74 +526,75 @@
     .timeline .content ul {
         margin-left: 0;
     }
-    
-    .timeline .content .title{
+
+    .timeline .content .title {
         text-align: start;
     }
 
     .timeline .images {
         position: relative;
     }
-    
+
     .timeline .images img {
         width: 19.041rem;
     }
-    
+
     .timeline .images::before {
         width: 11.37rem;
         height: 15.948rem;
     }
-    
+
     .timeline .images::after {
         width: 11.37rem;
         height: 15.948rem;
     }
 
-    .innovation-section{
+    .innovation-section {
         display: grid;
         grid-template-columns: 50% 50%;
         margin: 0 7rem;
         align-items: center;
         margin: 5rem 7rem;
     }
-    
-    .innovation-section .innovation-content{
+
+    .innovation-section .innovation-content {
         display: grid;
         grid-template-columns: 7rem auto;
         gap: 1rem;
     }
-    
-    .innovation-section .innovation-content img{
+
+    .innovation-section .innovation-content img {
         height: 15.156rem;
     }
-    
-    .innovation-section .innovation-content p{
+
+    .innovation-section .innovation-content p {
         font-size: 2.6rem;
         font-family: fantasy;
         color: var(--color-principal);
     }
-    
-    .innovation-section .innovation-content p:nth-of-type(2){
+
+    .innovation-section .innovation-content p:nth-of-type(2) {
         text-align: center;
     }
-    .innovation-section .innovation-content p:nth-of-type(3){
+
+    .innovation-section .innovation-content p:nth-of-type(3) {
         text-align: center;
     }
-    
-    .innovation-section .innovation-image{
+
+    .innovation-section .innovation-image {
         display: flex;
         justify-content: center;
     }
-    
-    .innovation-section .innovation-image img{
+
+    .innovation-section .innovation-image img {
         width: 17.839rem;
     }
 
-    .subscrib-section .button-subscrib{
+    .subscrib-section .button-subscrib {
         width: 37%;
     }
 
-    .subscrib-section h3{
+    .subscrib-section h3 {
         width: 38%;
     }
 
@@ -583,6 +602,5 @@
         position: absolute;
         left: -126px;
         bottom: -12px;
-        /* height: 2.5rem; */
-    } 
+    }
 }

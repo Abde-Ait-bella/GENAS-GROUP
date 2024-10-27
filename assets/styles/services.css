@@ -114,7 +114,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 25rem;
     font-size: 24px;
 }
 .Genas-text h1{
@@ -301,11 +301,6 @@ input[type=file]::file-selector-button:hover {
 
 /* ------Responsive Design----------- */
 @media (min-width: 1025px) {   
-    
-    body{
-        margin-left: 19px
-    }
-
     /* ----Services Section----- */
     .services-mis {
         flex-direction: row;
@@ -365,7 +360,7 @@ input[type=file]::file-selector-button:hover {
     }
 
     .Genas-text-globale {
-        margin-top: 100px;
+        margin-top: 1rem;
         font-size: 28px; 
     }
 
@@ -390,6 +385,5 @@ input[type=file]::file-selector-button:hover {
         margin-top: 50px;
     }
         
-  
 
 }
