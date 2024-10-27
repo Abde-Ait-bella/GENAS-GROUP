@@ -56,17 +56,21 @@
     width: 100%;
     left: 0;
     top: -113vh;
-    height: 85vh;
+    border-bottom-left-radius: 16rem;
+    border-bottom-right-radius: 16rem;
+    height: 100vh;
     border-bottom: 5px solid var(--color-principal);
-    padding: 5rem 0 2rem 0;
-    opacity: 0;
-    transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    padding: 0;
+    opacity: 1;
+    transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out, border-bottom-left-radius 0.6s ease-in-out, border-bottom-right-radius 0.6s ease-in-out;
 }
 
 .hero-section nav .menuresponsive.open {
     top: 0;
     opacity: 1;
-    transition: top 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: top 0.6s ease-in-out, opacity 0.6s  ease-in-out, border-bottom-left-radius 0.6s 0.3s ease-in-out,  border-bottom-right-radius 0.6s 0.3s ease-in-out;
 }
 
 .hero-section nav .menuresponsive ul {
@@ -75,7 +79,9 @@
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    padding: 0;
+    padding: 5rem 0 2rem 0;
+    backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 
